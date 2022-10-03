@@ -1,8 +1,11 @@
 1.Adabas D 数据库链接函数库
+
 2.apache服务器专用函数库
+
 3.数组处理函数库
-	3.1.	array_change_key_case — 										将数组中的所有键名修改为全大写或小写
-	3.2	array_chunk — 															将一个数组分割成多个
+
+​	3.1.	array_change_key_case — 										将数组中的所有键名修改为全大写或小写
+​	3.2	array_chunk — 															将一个数组分割成多个
 array_column — 返回输入数组中指定列的值
 array_combine — 创建一个数组，用一个数组的值作为其键名，另一个数组的值作为其值
 array_count_values — 统计数组中所有的值
