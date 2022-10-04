@@ -210,14 +210,16 @@
 
 5.BC 高精确度函数库
 6.历法函数库
+
 7.ClibPDF 函数库
+
 8.日期与时间函数库
 
 ​	8.1.1	calendar
 
-```php
-	cal_days_in_month — 返回某个历法中某年中某月的天数
-	cal_from_jd — 转换Julian Day计数到一个支持的历法。
+```html
+	cal_days_in_month ————— 返回某个历法中某年中某月的天数
+	cal_from_jd ——————————— 转换Julian Day计数到一个支持的历法。
 	cal_info — 返回选定历法的信息
 	cal_to_jd — 从一个支持的历法转变为Julian Day计数。
 	easter_date — 得到指定年份的复活节午夜时的Unix时间戳。
