@@ -1,212 +1,139 @@
 1.Adabas D 数据库链接函数库
 
+~~~html
+   
+~~~
+
+
+
 2.apache服务器专用函数库
+
+~~~html
+apache_child_terminate ————— 在本次请求结束后终止 apache 子进程
+apache_get_modules ————————— 获得已加载的Apache模块列表
+apache_get_version ————————— 获得Apache版本信息
+apache_getenv —————————————— 获取 Apache subprocess_env 变量
+apache_lookup_uri —————————— 对指定的 URI 执行部分请求并返回所有有关信息
+apache_note ———————————————— 取得或设置 apache 请求记录
+apache_request_headers ————— 获取全部 HTTP 请求头信息
+apache_response_headers ———— 获得全部 HTTP 响应头信息
+apache_setenv —————————————— 设置 Apache 子进程环境变量
+getallheaders —————————————— 获取全部 HTTP 请求头信息
+virtual ———————————————————— 执行 Apache 子请求
+~~~
 
 3.数组处理函数库
 
-​	3.1.	array_change_key_case ——— 								将数组中的所有键名修改为全大写或小写
-
-​	3.2	array_chunk — 															将一个数组分割成多个
-
-​	3.3	array_column — 														 返回输入数组中指定列的值
-
-​	3.4	array_combine — 					创建一个数组，用一个数组的值作为其键名，另一个数组的值作为其值
-
-​	3.5	array_count_values —	 	统计数组中所有的值
-
-​	3.6	array_diff_assoc — 带索引检查计算数组的差集
-
-​	3.7	array_diff_key — 使用键名比较计算数组的差集
-
-​	3.8	array_diff_uassoc — 用用户提供的回调函数做索引检查来计算数组的差集
-
-​	3.9	array_diff_ukey — 用回调函数对键名比较计算数组的差集
-
-​	3.10	array_diff — 计算数组的差集
-
-​	3.11	array_fill_keys — 使用指定的键和值填充数组
-
-​	3.12	array_fill — 用给定的值填充数组
-
-​	3.13	array_filter — 使用回调函数过滤数组的元素
-
-​	3.14	array_flip — 交换数组中的键和值
-
-​	3.15	array_intersect_assoc — 带索引检查计算数组的交集
-
-​	3.16	array_intersect_key — 使用键名比较计算数组的交集
-
-​	3.17	array_intersect_uassoc — 带索引检查计算数组的交集，用回调函数比较索引
-
-​	3.18	array_intersect_ukey — 在键名上使用回调函数来比较计算数组的交集
-
-​	3.19	array_intersect — 计算数组的交集
-
-​	3.20	array_is_list — 判断给定的 array 是否为 list
-
-​	3.21	array_key_exists — 检查数组里是否有指定的键名或索引
-
-​	3.22	array_key_first — 获取指定数组的第一个键
-
-​	3.23	array_key_last — 获取一个数组的最后一个键值
-
-​	3.24	array_keys — 返回数组中部分的或所有的键名
-
-​	3.25	array_map — 为数组的每个元素应用回调函数
-
-​	3.26	array_merge_recursive — 递归地合并一个或多个数组
-
-​	3.27	array_merge — 合并一个或多个数组
-
-​	3.28	array_multisort — 对多个数组或多维数组进行排序
-
-​	3.29	array_pad — 以指定长度将一个值填充进数组
-
-​	3.30	array_pop — 弹出数组最后一个单元（出栈）
-
-​	3.31	array_product — 计算数组中所有值的乘积
-
-​	3.32	array_push — 将一个或多个单元压入数组的末尾（入栈）
-
-​	3.33	array_rand — 从数组中随机取出一个或多个随机键
-
-​	3.34	array_reduce — 用回调函数迭代地将数组简化为单一的值
-
-​	3.35	array_replace_recursive — 使用传递的数组递归替换第一个数组的元素
-
-​	3.36	array_replace — 使用传递的数组替换第一个数组的元素
-
-​	3.37	array_reverse — 返回单元顺序相反的数组
-
-​	3.38	array_search — 在数组中搜索给定的值，如果成功则返回首个相应的键名
-
-​	3.39	array_shift — 将数组开头的单元移出数组
-
-​	3.40	array_slice — 从数组中取出一段
-
-​	3.41	array_splice — 去掉数组中的某一部分并用其它值取代
-
-​	3.42	array_sum — 对数组中所有值求和
-
-​	3.43	array_udiff_assoc — 带索引检查计算数组的差集，用回调函数比较数据
-
-​	3.44	array_udiff_uassoc — 带索引检查计算数组的差集，用回调函数比较数据和索引
-
-​	3.45	array_udiff — 用回调函数比较数据来计算数组的差集
-
-​	3.46	array_uintersect_assoc — 带索引检查计算数组的交集，用回调函数比较数据
-
-​	3.47	array_uintersect_uassoc — 带索引检查计算数组的交集，用单独的回调函数比较数据和索引
-
-​	3.48	array_uintersect — 计算数组的交集，用回调函数比较数据
-
-​	3.49	array_unique — 移除数组中重复的值
-
-​	3.50	array_unshift — 在数组开头插入一个或多个单元
-
-​	3.50	array_values — 返回数组中所有的值
-
-​	3.51	array_walk_recursive — 对数组中的每个成员递归地应用用户函数
-
-​	3.44	array_walk — 使用用户自定义函数对数组中的每个元素做回调处理
-
-​	3.44	array — 新建一个数组
-
-​	3.44	arsort — 对数组进行降向排序并保持索引关系
-
-​	3.44	asort — 对数组进行升序排序并保持索引关系
-
-​	3.44	compact — 建立一个数组，包括变量名和它们的值
-
-​	3.44	count — 统计数组、Countable 对象中所有元素的数量
-
-​	3.44	current — 返回数组中的当前值
-
-​	3.44	each — 返回数组中当前的键／值对并将数组指针向前移动一步
-
-​	3.44	end — 将数组的内部指针指向最后一个单元
-
-​	3.44	extract — 从数组中将变量导入到当前的符号表
-
-​	3.44	in_array — 检查数组中是否存在某个值
-
-​	3.44	key_exists — 别名 array_key_exists
-
-​	3.44	key — 从关联数组中取得键名
-
-​	3.44	krsort — 对数组按照键名逆向排序
-
-​	3.44	ksort — 对数组根据键名升序排序
-
-​	3.44	list — 把数组中的值赋给一组变量
-
-​	3.44	natcasesort — 用“自然排序”算法对数组进行不区分大小写字母的排序
-
-​	3.44	natsort — 用“自然排序”算法对数组排序
-
-​	3.44	next — 将数组中的内部指针向前移动一位
-
-​	3.44	pos — current 的别名
-
-​	3.44	prev — 将数组的内部指针倒回一位
-
-​	3.44	range — 根据范围创建数组，包含指定的元素
-
-​	3.44	reset — 将数组的内部指针指向第一个单元
-
-​	3.44	rsort — 对数组降序排序
-
-​	3.44	shuffle — 打乱数组
-
-​	3.44	sizeof — count 的别名
-
-​	3.44	sort — 对数组升序排序
-
-​	3.44	uasort — 使用用户自定义的比较函数，保持索引和值的对应关系，原地排序 array。
-
-​	3.44	uksort — 使用用户自定义的比较函数对数组中的键名进行排序
-
-​	3.44	usort — 使用用户自定义的比较函数对数组中的值进行排序
+~~~html
+array_change_key_case———将数组中的所有键名修改为全大写或小写
+array_chunk ————————————将一个数组分割成多个
+array_column ———————————返回输入数组中指定列的值
+array_combine ——————————创建一个数组，用一个数组的值作为其键名，另一个数组的值作为其值
+array_count_values —————统计数组中所有的值
+array_diff_assoc ——————— 带索引检查计算数组的差集
+array_diff_key ————————— 使用键名比较计算数组的差集
+array_diff_uassoc ——————— 用用户提供的回调函数做索引检查来计算数组的差集
+array_diff_ukey ————————— 用回调函数对键名比较计算数组的差集
+array_diff ————————————— 计算数组的差集
+array_fill_keys ———————— 使用指定的键和值填充数组
+array_fill ————————————— 用给定的值填充数组
+array_filter ——————————— 使用回调函数过滤数组的元素
+array_flip ————————————— 交换数组中的键和值
+array_intersect_assoc —— 带索引检查计算数组的交集
+array_intersect_key ———— 使用键名比较计算数组的交集
+array_intersect_uassoc — 带索引检查计算数组的交集，用回调函数比较索引
+array_intersect_ukey ——— 在键名上使用回调函数来比较计算数组的交集
+array_intersect ———————— 计算数组的交集
+array_is_list —————————— 判断给定的 array 是否为 list
+array_key_exists ——————— 检查数组里是否有指定的键名或索引
+array_key_first ———————— 获取指定数组的第一个键
+array_key_last ———————— 获取一个数组的最后一个键值
+array_keys ———————————— 返回数组中部分的或所有的键名
+array_map ————————————— 为数组的每个元素应用回调函数
+array_merge_recursive — 递归地合并一个或多个数组
+array_merge ——————————— 合并一个或多个数组
+array_multisort———————— 对多个数组或多维数组进行排序
+array_pad ————————————— 以指定长度将一个值填充进数组
+array_pop ————————————— 弹出数组最后一个单元（出栈）
+array_product ————————— 计算数组中所有值的乘积
+array_push ———————————— 将一个或多个单元压入数组的末尾（入栈）
+array_rand ———————————— 从数组中随机取出一个或多个随机键
+array_reduce —————————— 用回调函数迭代地将数组简化为单一的值
+array_replace_recursive — 使用传递的数组递归替换第一个数组的元素
+array_replace ———————— 使用传递的数组替换第一个数组的元素
+array_reverse ———————— 返回单元顺序相反的数组
+array_search ————————— 在数组中搜索给定的值，如果成功则返回首个相应的键名
+array_shift —————————— 将数组开头的单元移出数组
+array_slice —————————— 从数组中取出一段
+array_splice ————————— 去掉数组中的某一部分并用其它值取代
+array_sum ———————————— 对数组中所有值求和
+array_udiff_assoc ———— 带索引检查计算数组的差集，用回调函数比较数据
+array_udiff_uassoc ——— 带索引检查计算数组的差集，用回调函数比较数据和索引
+array_udiff — 用回调函数比较数据来计算数组的差集
+array_uintersect_assoc — 带索引检查计算数组的交集，用回调函数比较数据
+array_uintersect_uassoc — 带索引检查计算数组的交集，用单独的回调函数比较数据和索引
+array_uintersect — 计算数组的交集，用回调函数比较数据
+array_unique — 移除数组中重复的值
+array_unshift — 在数组开头插入一个或多个单元
+array_values — 返回数组中所有的值
+array_walk_recursive — 对数组中的每个成员递归地应用用户函数
+array_walk — 使用用户自定义函数对数组中的每个元素做回调处理
+array — 新建一个数组
+arsort — 对数组进行降向排序并保持索引关系
+asort — 对数组进行升序排序并保持索引关系
+compact — 建立一个数组，包括变量名和它们的值
+count — 统计数组、Countable 对象中所有元素的数量
+current — 返回数组中的当前值
+each — 返回数组中当前的键／值对并将数组指针向前移动一步
+end — 将数组的内部指针指向最后一个单元
+extract — 从数组中将变量导入到当前的符号表
+in_array — 检查数组中是否存在某个值
+key_exists — 别名 array_key_exists
+key — 从关联数组中取得键名
+krsort — 对数组按照键名逆向排序
+ksort — 对数组根据键名升序排序
+list — 把数组中的值赋给一组变量
+natcasesort — 用“自然排序”算法对数组进行不区分大小写字母的排序
+natsort — 用“自然排序”算法对数组排序
+next — 将数组中的内部指针向前移动一位
+pos — current 的别名
+prev — 将数组的内部指针倒回一位
+range — 根据范围创建数组，包含指定的元素
+reset — 将数组的内部指针指向第一个单元
+rsort — 对数组降序排序
+shuffle — 打乱数组
+sizeof — count 的别名
+sort — 对数组升序排序
+uasort — 使用用户自定义的比较函数，保持索引和值的对应关系，原地排序 array。
+uksort — 使用用户自定义的比较函数对数组中的键名进行排序
+usort — 使用用户自定义的比较函数对数组中的值进行排序
+~~~
 
 4.拼写检查函数库
 
-​	4.1	pspell_add_to_personal — 												Add the word to a personal wordlist
+~~~html
+4.1	pspell_add_to_personal — 												Add the word to a personal wordlist
+4.2	pspell_add_to_session — Add the word to the wordlist in the current session
+4.3	pspell_check — Check a word
+4.4	pspell_clear_session — Clear the current session
+4.5	pspell_config_create — Create a config used to open a dictionary
+4.6	pspell_config_data_dir — Location of language data files
+4.7	pspell_config_dict_dir — Location of the main word list
+4.8	pspell_config_ignore — Ignore words less than N characters long
+4.9	pspell_config_mode — Change the mode number of suggestions returned
+4.10 pspell_config_personal — Set a file that contains personal wordlist
+4.11	pspell_config_repl — Set a file that contains replacement pairs
+4.12	pspell_config_runtogether — Consider run-together words as valid compounds
+4.13	pspell_config_save_repl — Determine whether to save a replacement pairs list along with the wordlist
+4.14	pspell_new_config — Load a new dictionary with settings based on a given config
+4.15	pspell_new_personal — Load a new dictionary with personal wordlist
+4.16	pspell_new — Load a new dictionary
+4.17	pspell_save_wordlist — Save the personal wordlist to a file
+4.18	pspell_store_replacement — Store a replacement pair for a word
+4.19	pspell_suggest — Suggest spellings of a word
+~~~
 
-​	4.2	pspell_add_to_session — Add the word to the wordlist in the current session
 
-​	4.3	pspell_check — Check a word
-
-​	4.4	pspell_clear_session — Clear the current session
-
-​	4.5	pspell_config_create — Create a config used to open a dictionary
-
-​	4.6	pspell_config_data_dir — Location of language data files
-
-​	4.7	pspell_config_dict_dir — Location of the main word list
-
-​	4.8	pspell_config_ignore — Ignore words less than N characters long
-
-​	4.9	pspell_config_mode — Change the mode number of suggestions returned
-
-​	4.10	pspell_config_personal — Set a file that contains personal wordlist
-
-​	4.11	pspell_config_repl — Set a file that contains replacement pairs
-
-​	4.12	pspell_config_runtogether — Consider run-together words as valid compounds
-
-​	4.13	pspell_config_save_repl — Determine whether to save a replacement pairs list along with the wordlist
-
-​	4.14	pspell_new_config — Load a new dictionary with settings based on a given config
-
-​	4.15	pspell_new_personal — Load a new dictionary with personal wordlist
-
-​	4.16	pspell_new — Load a new dictionary
-
-​	4.17	pspell_save_wordlist — Save the personal wordlist to a file
-
-​	4.18	pspell_store_replacement — Store a replacement pair for a word
-
-​	4.19	pspell_suggest — Suggest spellings of a word
 
 5.BC 高精确度函数库
 6.历法函数库
@@ -215,30 +142,100 @@
 
 8.日期与时间函数库
 
+​	8.1.1	DateTime — DateTime 类
+
+~~~html
+	DateTime::add ——————————————————— 修改 DateTime 对象，增加天、月、年、小时、分钟以及秒的数量。
+    DateTime::__construct ——————————— 返回新的 DateTime 对象
+    DateTime::createFromFormat —————— 根据指定格式解析时间字符串
+    DateTime::createFromImmutable ——— Returns new DateTime object encapsulating the given DateTimeImmutable object
+    DateTime::createFromInterface ——— Returns new DateTime object encapsulating the given DateTimeInterface object
+    DateTime::getLastErrors ————————— 返回警告和错误信息
+    DateTime::modify ———————————————— 修改日期时间对象的值
+    DateTime::__set_state ——————————— __set_state 处理程序
+    DateTime::setDate ——————————————— 设置日期
+    DateTime::setISODate ———————————— 设置 ISO 日期
+    DateTime::setTime ——————————————— 设置时间
+    DateTime::setTimestamp —————————— 以 Unix 时间戳的方式设置日期和时间
+    DateTime::setTimezone ——————————— 设置 DateTime 对象的时区
+    DateTime::sub ——————————————————— 对 DateTime 对象减去一定量的 日、月、年、小时、分钟和秒。
+~~~
+
+​	8.12	DateTimeImmutable — The DateTimeImmutable class
+
+~~~html
+    DateTimeImmutable::add —————————————————— Returns a new object, with added amount of days, months, years, hours, minutes and seconds
+    DateTimeImmutable::__construct — Returns new DateTimeImmutable object
+    DateTimeImmutable::createFromFormat ————— Parses a time string according to a specified format
+    DateTimeImmutable::createFromInterface —— Returns new DateTimeImmutable object encapsulating the given DateTimeInterface object
+    DateTimeImmutable::createFromMutable ———— Returns new DateTimeImmutable object encapsulating the given DateTime object
+    DateTimeImmutable::getLastErrors ———————— Returns the warnings and errors
+    DateTimeImmutable::modify ——————————————— Creates a new object with modified timestamp
+    DateTimeImmutable::__set_state —————————— The __set_state handler
+    DateTimeImmutable::setDate —————————————— Sets the date
+    DateTimeImmutable::setISODate ——————————— Sets the ISO date
+    DateTimeImmutable::setTime —————————————— Sets the time
+    DateTimeImmutable::setTimestamp ————————— Sets the date and time based on a Unix timestamp
+    DateTimeImmutable::setTimezone —————————— Sets the time zone
+    DateTimeImmutable::sub —————————————————— Subtracts an amount of days, months, years, hours, minutes and seconds
+~~~
+
+​	8.1.3	DateTimeInterface — The DateTimeInterface interface
+
+~~~html
+DateTimeInterface::diff ——————————— Returns the difference between two DateTime objects
+DateTimeInterface::format ————————— 按照指定格式返回格式化后的日期
+DateTimeInterface::getOffset —————— Returns the timezone offset
+DateTimeInterface::getTimestamp ——— Gets the Unix timestamp
+DateTimeInterface::getTimezone ———— Return time zone relative to given DateTime
+DateTime::__wakeup ———————————————— The __wakeup handler
+~~~
+
+​	8.14	继续
+
 ​	8.1.1	calendar
 
 ```html
-	cal_days_in_month ————— 返回某个历法中某年中某月的天数
-	cal_from_jd ——————————— 转换Julian Day计数到一个支持的历法。
-	cal_info — 返回选定历法的信息
-	cal_to_jd — 从一个支持的历法转变为Julian Day计数。
-	easter_date — 得到指定年份的复活节午夜时的Unix时间戳。
-	easter_days — 得到指定年份的3月21日到复活节之间的天数
-	FrenchToJD — 从一个French Republican历法的日期得到Julian Day计数。
-	GregorianToJD — 转变一个Gregorian历法日期到Julian Day计数
-	JDDayOfWeek — 返回星期的日期
-	JDMonthName — 返回月份的名称
-	JDToFrench — 转变一个Julian Day计数到French Republican历法的日期
-	JDToGregorian — 转变一个Julian Day计数为Gregorian历法日期
-	jdtojewish — 转换一个julian天数为Jewish历法的日期
-	JDToJulian — 转变一个Julian Day计数到Julian历法的日期
-	jdtounix — 转变Julian Day计数为一个Unix时间戳
-	JewishToJD — 转变一个Jewish历法的日期为一个Julian Day计数
-	JulianToJD — 转变一个Julian历法的日期为Julian Day计数
-	unixtojd — 转变Unix时间戳为Julian Day计数
+cal_days_in_month ————— 返回某个历法中某年中某月的天数
+cal_from_jd ——————————— 转换Julian Day计数到一个支持的历法。
+cal_info —————————————— 返回选定历法的信息
+cal_to_jd ————————————— 从一个支持的历法转变为Julian Day计数。
+easter_date ——————————— 得到指定年份的复活节午夜时的Unix时间戳。
+easter_days ——————————— 得到指定年份的3月21日到复活节之间的天数
+FrenchToJD ———————————— 从一个French Republican历法的日期得到Julian Day计数。
+GregorianToJD ————————— 转变一个Gregorian历法日期到Julian Day计数
+JDDayOfWeek ——————————— 返回星期的日期
+JDMonthName ——————————— 返回月份的名称
+JDToFrench ———————————— 转变一个Julian Day计数到French Republican历法的日期
+JDToGregorian ————————— 转变一个Julian Day计数为Gregorian历法日期
+jdtojewish ———————————— 转换一个julian天数为Jewish历法的日期
+JDToJulian ———————————— 转变一个Julian Day计数到Julian历法的日期
+jdtounix —————————————— 转变Julian Day计数为一个Unix时间戳
+JewishToJD ———————————— 转变一个Jewish历法的日期为一个Julian Day计数
+JulianToJD ———————————— 转变一个Julian历法的日期为Julian Day计数
+unixtojd —————————————— 转变Unix时间戳为Julian Day计数
 ```
 
 9.DBA 函数库
+
+~~~html
+dba_close — Close a DBA database
+dba_delete — Delete DBA entry specified by key
+dba_exists — Check whether key exists
+dba_fetch — Fetch data specified by key
+dba_firstkey — Fetch first key
+dba_handlers — List all the handlers available
+dba_insert — Insert entry
+dba_key_split — Splits a key in string representation into array representation
+dba_list — List all open database files
+dba_nextkey — Fetch next key
+dba_open — Open database
+dba_optimize — Optimize database
+dba_popen — Open database persistently
+dba_replace — Replace or insert entry
+dba_sync — Synchronize database
+~~~
+
 10.dBase 格式资料表函数库
 11.dbm 类数据库函数库
 12.目录管理函数库
@@ -435,10 +432,91 @@
 ​		wordwrap — 打断字符串为指定数量的字串
 
 48.URL 处理函数库
+
+~~~html
+base64_decode ————— 对使用 MIME base64 编码的数据进行解码
+base64_encode ————— 使用 MIME base64 对数据进行编码
+get_headers ——————— 取得服务器响应一个 HTTP 请求所发送的所有标头
+get_meta_tags ————— 从一个文件中提取所有的 meta 标签 content 属性，返回一个数组
+http_build_query —— 生成 URL-encode 之后的请求字符串
+parse_url ————————— 解析 URL，返回其组成部分
+rawurldecode —————— 对已编码的 URL 字符串进行解码
+rawurlencode —————— 按照 RFC 3986 对 URL 进行编码
+urldecode ————————— 解码已编码的 URL 字符串
+urlencode ————————— 编码 URL
+~~~
+
 49.变量处理函数库
 50.Vmailmgr 邮件处理函数库
 51.WDDX 函数库
 52.压缩文件函数库
+
+​	52.1	Zip
+
+~~~html
+ZipArchive::addEmptyDir — Add a new directory
+ZipArchive::addFile — Adds a file to a ZIP archive from the given path
+ZipArchive::addFromString — Add a file to a ZIP archive using its contents
+ZipArchive::addGlob — Add files from a directory by glob pattern
+ZipArchive::addPattern — Add files from a directory by PCRE pattern
+ZipArchive::clearError — Clear the status error message, system and/or zip messages
+ZipArchive::close — Close the active archive (opened or newly created)
+ZipArchive::count — Counts the number of files in the archive
+ZipArchive::deleteIndex — Delete an entry in the archive using its index
+ZipArchive::deleteName — Delete an entry in the archive using its name
+ZipArchive::extractTo — 解压缩文件
+ZipArchive::getArchiveComment — Returns the Zip archive comment
+ZipArchive::getCommentIndex — Returns the comment of an entry using the entry index
+ZipArchive::getCommentName — Returns the comment of an entry using the entry name
+ZipArchive::getExternalAttributesIndex — Retrieve the external attributes of an entry defined by its index
+ZipArchive::getExternalAttributesName — Retrieve the external attributes of an entry defined by its name
+ZipArchive::getFromIndex — Returns the entry contents using its index
+ZipArchive::getFromName — Returns the entry contents using its name
+ZipArchive::getNameIndex — Returns the name of an entry using its index
+ZipArchive::getStatusString — Returns the status error message, system and/or zip messages
+ZipArchive::getStream — Get a file handler to the entry defined by its name (read only)
+ZipArchive::getStreamIndex — Get a file handler to the entry defined by its index (read only)
+ZipArchive::getStreamName — Get a file handler to the entry defined by its name (read only)
+ZipArchive::isCompressionMethodSupported — Check if a compression method is supported by libzip
+ZipArchive::isEncryptionMethodSupported — Check if a encryption method is supported by libzip
+ZipArchive::locateName — Returns the index of the entry in the archive
+ZipArchive::open — Open a ZIP file archive
+ZipArchive::registerCancelCallback — Register a callback to allow cancellation during archive close.
+ZipArchive::registerProgressCallback — Register a callback to provide updates during archive close.
+ZipArchive::renameIndex — Renames an entry defined by its index
+ZipArchive::renameName — Renames an entry defined by its name
+ZipArchive::replaceFile — Replace file in ZIP archive with a given path
+ZipArchive::setArchiveComment — Set the comment of a ZIP archive
+ZipArchive::setCommentIndex — Set the comment of an entry defined by its index
+ZipArchive::setCommentName — Set the comment of an entry defined by its name
+ZipArchive::setCompressionIndex — Set the compression method of an entry defined by its index
+ZipArchive::setCompressionName — Set the compression method of an entry defined by its name
+ZipArchive::setEncryptionIndex — Set the encryption method of an entry defined by its index
+ZipArchive::setEncryptionName — Set the encryption method of an entry defined by its name
+ZipArchive::setExternalAttributesIndex — Set the external attributes of an entry defined by its index
+ZipArchive::setExternalAttributesName — Set the external attributes of an entry defined by its name
+ZipArchive::setMtimeIndex — Set the modification time of an entry defined by its index
+ZipArchive::setMtimeName — Set the modification time of an entry defined by its name
+ZipArchive::setPassword — Set the password for the active archive
+ZipArchive::statIndex — Get the details of an entry defined by its index
+ZipArchive::statName — Get the details of an entry defined by its name
+ZipArchive::unchangeAll — Undo all changes done in the archive
+ZipArchive::unchangeArchive — Revert all global changes done in the archive
+ZipArchive::unchangeIndex — Revert all changes done to an entry at the given index
+ZipArchive::unchangeName — Revert all changes done to an entry with the given name
+
+zip_close — 关闭一个ZIP档案文件
+zip_entry_close — 关闭目录项
+zip_entry_compressedsize — 检索目录项压缩过后的大小
+zip_entry_compressionmethod — 检索目录实体的压缩方法
+zip_entry_filesize — 检索目录实体的实际大小
+zip_entry_name — 检索目录项的名称
+zip_entry_open — 打开用于读取的目录实体
+zip_entry_read — 读取一个打开了的压缩目录实体
+zip_open — 打开ZIP存档文件
+zip_read — 读取ZIP存档文件中下一项
+~~~
+
 53.XML 解析函数库
 54.Session 函数库
 55.GNU 记录函数库
